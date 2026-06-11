@@ -1,6 +1,6 @@
 # Alarm Clock CLI (Clean Architecture)
 
-A Python CLI alarm clock designed for the senior build exercise with a clean, testable architecture.
+A Python CLI alarm clock built with a clean, testable architecture.
 
 ## Implemented Scope
 
@@ -17,7 +17,7 @@ A Python CLI alarm clock designed for the senior build exercise with a clean, te
 - Local machine execution only.
 - Local system time is the source of truth.
 - Single-user CLI workflow.
-- JSON file storage is enough for exercise scope.
+- JSON file storage is enough for the current project scope.
 
 ## Non-Goals
 
@@ -91,7 +91,7 @@ pytest
 ## Tradeoffs and Decisions
 
 - **Typer over argparse**: cleaner command definitions and user-facing errors for fast development.
-- **JSON over SQLite**: lightweight persistence aligned with prompt constraints.
+- **JSON over SQLite**: lightweight persistence aligned with current project goals.
 - **Ports/adapters**: enables deterministic unit tests for scheduling logic without real sleeping or wall-clock dependencies.
 - **Relative input + daily repeat**: high-signal features that demonstrate requirement interpretation and practical scope control.
 
@@ -99,7 +99,7 @@ pytest
 
 During implementation, AI was used to:
 
-- refine scope from ambiguous prompt;
+- refine scope from initial requirements;
 - draft architecture and edge-case list;
 - generate an initial structure;
 - review and iterate on validation and scheduling behavior.
